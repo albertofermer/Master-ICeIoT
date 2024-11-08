@@ -8,3 +8,7 @@ git add .
 git commit -m "First Commit"
 git push
 dir
+cd
+git add .
+git commit -m "Teoria y primeros entregables"
+git push
