@@ -1,0 +1,4 @@
+/home/student/Escritorio/Vision 3D/Vision3D/color_balance/build2/CMakeFiles/color_balance.dir
+/home/student/Escritorio/Vision 3D/Vision3D/color_balance/build2/CMakeFiles/color_balance_test_common_code.dir
+/home/student/Escritorio/Vision 3D/Vision3D/color_balance/build2/CMakeFiles/edit_cache.dir
+/home/student/Escritorio/Vision 3D/Vision3D/color_balance/build2/CMakeFiles/rebuild_cache.dir
