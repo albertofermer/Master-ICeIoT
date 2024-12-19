@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<input type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>4</cols>
+  <dt>"3u"</dt>
+  <data>
+    75 244 216 80 112 126 98 250 179 113 180 202 149 19 223 8 204 97 133
+    139 69 3 214 193 60 146 230 130 43 60 74 32 187 193 175 237</data></input>
+<my_min_v type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>u</dt>
+  <data>
+    3 19 60</data></my_min_v>
+<your_min_v type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>u</dt>
+  <data>
+    3 19 60</data></your_min_v>
+<my_max_v type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>u</dt>
+  <data>
+    193 250 237</data></my_max_v>
+<your_max_v type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>u</dt>
+  <data>
+    193 250 237</data></your_max_v>
+<my_min_loc type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>"2i"</dt>
+  <data>
+    3 1 0 1 1 2</data></my_min_loc>
+<your_min_loc type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>"2i"</dt>
+  <data>
+    1 3 1 0 2 1</data></your_min_loc>
+<my_max_loc type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>"2i"</dt>
+  <data>
+    3 2 2 0 3 2</data></my_max_loc>
+<your_max_loc type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>"2i"</dt>
+  <data>
+    2 3 0 2 2 3</data></your_max_loc>
+</opencv_storage>
