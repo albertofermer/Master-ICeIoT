@@ -1,0 +1,4 @@
+/home/student/Escritorio/Vision 3D/Vision3D/edge_detector-students-1.2/edge_detector/build/CMakeFiles/edge_detector.dir
+/home/student/Escritorio/Vision 3D/Vision3D/edge_detector-students-1.2/edge_detector/build/CMakeFiles/edge_detector_test_common_code.dir
+/home/student/Escritorio/Vision 3D/Vision3D/edge_detector-students-1.2/edge_detector/build/CMakeFiles/edit_cache.dir
+/home/student/Escritorio/Vision 3D/Vision3D/edge_detector-students-1.2/edge_detector/build/CMakeFiles/rebuild_cache.dir
