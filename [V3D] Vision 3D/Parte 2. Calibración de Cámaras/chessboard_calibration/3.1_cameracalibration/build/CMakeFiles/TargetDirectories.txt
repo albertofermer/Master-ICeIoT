@@ -1,0 +1,4 @@
+/home/z42ferma/Desktop/Alberto/chessboard_calibration/3.1_cameracalibration/build/CMakeFiles/calibration.dir
+/home/z42ferma/Desktop/Alberto/chessboard_calibration/3.1_cameracalibration/build/CMakeFiles/drawAxis.dir
+/home/z42ferma/Desktop/Alberto/chessboard_calibration/3.1_cameracalibration/build/CMakeFiles/edit_cache.dir
+/home/z42ferma/Desktop/Alberto/chessboard_calibration/3.1_cameracalibration/build/CMakeFiles/rebuild_cache.dir
