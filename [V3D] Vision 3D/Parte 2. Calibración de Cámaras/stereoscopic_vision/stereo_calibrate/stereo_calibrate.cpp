@@ -88,6 +88,9 @@ int main(int argc, char *argv[])
         cv::Mat resized;
         cv::resize(frame, resized, cv::Size(1920, 1080));
         cv::imshow("Image", resized);
+        int key = 0;
+        while (key != 13 && key != 27)
+            key = cv::waitKey(0) & 0xff;
         cv::waitKey(27);
     }
 
