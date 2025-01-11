@@ -1,0 +1,3 @@
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/stereoscopic_vision/stereo_calibrate/build/CMakeFiles/stereo_calibrate.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/stereoscopic_vision/stereo_calibrate/build/CMakeFiles/edit_cache.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/stereoscopic_vision/stereo_calibrate/build/CMakeFiles/rebuild_cache.dir
