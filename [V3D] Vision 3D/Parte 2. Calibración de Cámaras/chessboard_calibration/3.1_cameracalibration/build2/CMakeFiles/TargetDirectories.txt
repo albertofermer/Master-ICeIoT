@@ -1,5 +1,0 @@
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/chessboard_calibration/3.1_cameracalibration/build2/CMakeFiles/calibration.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/chessboard_calibration/3.1_cameracalibration/build2/CMakeFiles/drawAxis.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/chessboard_calibration/3.1_cameracalibration/build2/CMakeFiles/drawCubes.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/chessboard_calibration/3.1_cameracalibration/build2/CMakeFiles/edit_cache.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 2. Calibración de Cámaras/chessboard_calibration/3.1_cameracalibration/build2/CMakeFiles/rebuild_cache.dir

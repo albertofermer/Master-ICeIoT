@@ -1,4 +1,0 @@
-/home/student/Escritorio/Vision 3D/Vision3D/usm_enhance-students-1.9(1)/usm_enhance/build/CMakeFiles/usm_enhance.dir
-/home/student/Escritorio/Vision 3D/Vision3D/usm_enhance-students-1.9(1)/usm_enhance/build/CMakeFiles/usm_enhance_test_common_code.dir
-/home/student/Escritorio/Vision 3D/Vision3D/usm_enhance-students-1.9(1)/usm_enhance/build/CMakeFiles/edit_cache.dir
-/home/student/Escritorio/Vision 3D/Vision3D/usm_enhance-students-1.9(1)/usm_enhance/build/CMakeFiles/rebuild_cache.dir
