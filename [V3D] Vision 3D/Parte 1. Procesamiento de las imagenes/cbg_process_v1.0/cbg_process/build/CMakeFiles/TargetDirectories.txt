@@ -1,4 +1,0 @@
-/home/z42ferma/Desktop/Alberto/cbg_process/build/CMakeFiles/cbg_process.dir
-/home/z42ferma/Desktop/Alberto/cbg_process/build/CMakeFiles/cbg_process_test_common_code.dir
-/home/z42ferma/Desktop/Alberto/cbg_process/build/CMakeFiles/edit_cache.dir
-/home/z42ferma/Desktop/Alberto/cbg_process/build/CMakeFiles/rebuild_cache.dir

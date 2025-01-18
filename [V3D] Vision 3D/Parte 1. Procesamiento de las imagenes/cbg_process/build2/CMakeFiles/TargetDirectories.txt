@@ -1,4 +1,0 @@
-/home/student/Escritorio/Vision 3D/Vision3D/cbg_process/build2/CMakeFiles/cbg_process.dir
-/home/student/Escritorio/Vision 3D/Vision3D/cbg_process/build2/CMakeFiles/cbg_process_test_common_code.dir
-/home/student/Escritorio/Vision 3D/Vision3D/cbg_process/build2/CMakeFiles/edit_cache.dir
-/home/student/Escritorio/Vision 3D/Vision3D/cbg_process/build2/CMakeFiles/rebuild_cache.dir

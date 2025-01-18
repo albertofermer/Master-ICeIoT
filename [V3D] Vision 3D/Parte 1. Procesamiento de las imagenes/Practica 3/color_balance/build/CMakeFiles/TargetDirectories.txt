@@ -1,0 +1,4 @@
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 3/color_balance/build/CMakeFiles/color_balance.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 3/color_balance/build/CMakeFiles/color_balance_test_common_code.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 3/color_balance/build/CMakeFiles/edit_cache.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 3/color_balance/build/CMakeFiles/rebuild_cache.dir
