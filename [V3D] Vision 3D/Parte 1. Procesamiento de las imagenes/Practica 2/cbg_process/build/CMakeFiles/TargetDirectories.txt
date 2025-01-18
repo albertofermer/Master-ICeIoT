@@ -1,0 +1,4 @@
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 2/cbg_process/build/CMakeFiles/cbg_process.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 2/cbg_process/build/CMakeFiles/cbg_process_test_common_code.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 2/cbg_process/build/CMakeFiles/edit_cache.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 2/cbg_process/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/show_extremes.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/show_img.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/show_video.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/comp_stats.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/fsiv_tutorial_opencv_test_common_code.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/edit_cache.dir
+/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 1/fsiv_tutorial_opencv/build/CMakeFiles/rebuild_cache.dir

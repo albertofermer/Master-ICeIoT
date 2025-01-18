@@ -95,7 +95,7 @@ int main(int argc,char *argv[])
     std::cout << "distCoeffs : " << distCoeffs << std::endl;
     std::cout << "Rotation vector : " << R << std::endl;
     std::cout << "Translation vector : " << T << std::endl;
-    cv::FileStorage fs("calibration.yml", cv::FileStorage::WRITE);
+    cv::FileStorage fs("intrisics.yml", cv::FileStorage::WRITE);
     fs << "cameraMatrix" << cameraMatrix << "distCoeffs" << distCoeffs;
     
     // Estos valores se obtienen para cada una de las imagenes utilizando la funcion Rodrigues()

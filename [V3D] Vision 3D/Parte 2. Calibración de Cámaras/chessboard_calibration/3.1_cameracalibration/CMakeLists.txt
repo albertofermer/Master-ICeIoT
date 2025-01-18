@@ -11,6 +11,6 @@ include_directories ("${OpenCV_INCLUDE_DIRS}")
 
 add_executable(calibration calibration.cpp)
 add_executable(drawAxis drawAxis.cpp)
-add_executable(drawCubes drawCubes.cpp)
+add_executable(augReal augReal.cpp)
 
  
