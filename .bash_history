@@ -16,3 +16,6 @@ git commit -m "08/11/2024"
 git add .
 git commit -m "08/11/2024"
 git push
+git pull
+git stash
+git pull
