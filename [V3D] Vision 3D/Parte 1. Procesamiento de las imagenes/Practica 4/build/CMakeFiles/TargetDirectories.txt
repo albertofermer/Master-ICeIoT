@@ -1,4 +1,0 @@
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 4/build/CMakeFiles/usm_enhance.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 4/build/CMakeFiles/usm_enhance_test_common_code.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 4/build/CMakeFiles/edit_cache.dir
-/home/student/Escritorio/Master-ICeIoT/[V3D] Vision 3D/Parte 1. Procesamiento de las imagenes/Practica 4/build/CMakeFiles/rebuild_cache.dir
