@@ -1,7 +1,0 @@
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/show_extremes.dir
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/show_img.dir
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/show_video.dir
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/comp_stats.dir
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/fsiv_tutorial_opencv_test_common_code.dir
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/edit_cache.dir
-/home/student/Escritorio/Vision 3D/Vision3D/fsiv_tutorial_opencv/build2/CMakeFiles/rebuild_cache.dir
