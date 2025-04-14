@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-asset
+      id="caballo"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/34618011454_3a1417b23c_b.jpg?v=1743688973149"
+    ></a-asset>
+    <a-asset
+      id="jardin"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/34650501903_1d9a484785_b.jpg?v=1743688977843"
+    ></a-asset>
+    <a-asset
+      id = "planeta"
+      src = "https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/paisaje-wallpaper-1024x768.jpg?v=1743688981329"
+            ></a-asset>
+    
+
+    <a-scene>
+      <a-img
+        src = "#caballo"
+        position = "0 1.5 -3"
+      ></a-img>
+      
+      <a-curvedimage
+        src="#jardin"
+        position = "0 1.5 0"
+        theta-length = "90"
+        theta-start = "135"
+        radius = "0.707"
+        height = "0.833"
+        scale = " 3 3 3"
+      ></a-curvedimage>
+
+      
+<!--       right image -->
+      <a-curvedimage
+        src="#jardin"
+        position = "6 1.5 0"
+        theta-length = "50"
+        theta-start = "90"
+        radius = "0.5"
+        height = "0.327"
+        scale = " 3 3 3"
+      ></a-curvedimage>
+<!--             center image -->
+      <a-curvedimage
+        src="#planeta"
+        position = "6 1.5 0"
+        theta-length = "50"
+        theta-start = "180"
+        radius = "0.5"
+        height = "0.327"
+        scale = " 3 3 3"
+      ></a-curvedimage>
+      
+<!--             left image -->
+      <a-curvedimage
+        src="#caballo"
+        position = "6 1.5 0"
+        theta-length = "50"
+        theta-start = "270"
+        radius = "0.5"
+        height = "0.327"
+        scale = " 3 3 3"
+      ></a-curvedimage>
+      
+      <a-box
+        color = "red"
+        position = "0 1.5 -1"
+             width = "3"
+             height = "0.1"
+             depth = "3"
+             opacity = "0.5"
+      ></a-box>
+    </a-scene>
+  </body>
+</html>

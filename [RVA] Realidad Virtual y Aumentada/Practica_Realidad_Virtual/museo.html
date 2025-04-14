@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-asset
+      id="caballo"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/34618011454_3a1417b23c_b.jpg?v=1743688973149"
+    ></a-asset>
+    <a-asset
+      id="jardin"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/34650501903_1d9a484785_b.jpg?v=1743688977843"
+    ></a-asset>
+    <a-asset
+      id="planeta"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/paisaje-wallpaper-1024x768.jpg?v=1743688981329"
+    ></a-asset>
+    <a-asset
+      id="madera"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/wood_texture.jpg?v=1743692097159"
+    ></a-asset>
+    <a-asset
+      id="planeta-gtp"
+      src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/ChatGPT%20Image%203%20abr%202025%2C%2017_35_44.png?v=1743694573674"
+    ></a-asset>
+    <a-scene>
+<!--       imagen del caballo con marco -->
+      <a-plane
+        position="0 1.5 -3"
+        height="1.15"
+        width="1.15"
+        color="white"
+        side="double"
+        src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/wood_texture.jpg?v=1743692097159"
+      >
+        <a-image position="0 0 0.01" src="#caballo"></a-image>
+      </a-plane>
+
+      <!--     imagen del planeta curva -->
+      <a-cylinder
+        radius="0.5"
+        height="0.5"
+        theta-start="170"
+        side="double"
+        theta-length="70"
+        open-ended="true"
+        position="-4 1.5 -3"
+        src="#madera"
+        scale="3 3 3"
+        ><a-curvedimage
+          src="#planeta"
+          position="0 0 0.01"
+          theta-length="50"
+          theta-start="180"
+          radius="0.5"
+          height="0.327"
+        ></a-curvedimage
+      ></a-cylinder>
+      
+      
+      <a-cylinder
+        radius="0.5"
+        height="0.5"
+        theta-start="170"
+        side="double"
+        theta-length="70"
+        open-ended="true"
+        position="-4.5 1.5 -4"
+        src="#madera"
+        scale="3 3 3"
+        ><a-curvedimage
+          src="#planeta-gtp"
+          position="0 0 0.01"
+          theta-length="50"
+          theta-start="180"
+          radius="0.5"
+          height="0.327"
+        ></a-curvedimage
+      ></a-cylinder>
+
+      <a-cylinder
+        radius="0.5"
+        height="0.5"
+        theta-start="170"
+        side="double"
+        theta-length="70"
+        open-ended="true"
+        position="-5.5 1.5 -6"
+        src="#madera"
+        scale="3 3 3"
+        ><a-curvedimage
+          src="#planeta"
+          position="0 0 0.01"
+          theta-length="50"
+          theta-start="180"
+          radius="0.5"
+          height="0.327"
+        ></a-curvedimage
+      ></a-cylinder>
+      
+      <a-sky
+        src="https://cdn.glitch.global/412cb4ce-1611-49c4-9196-622033ec8447/gallery.jpg?v=1743691735953"
+      ></a-sky>
+    </a-scene>
+  </body>
+</html>

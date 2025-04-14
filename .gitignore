@@ -1,0 +1,84 @@
+# =====================
+# Entornos virtuales
+# =====================
+env/
+ENV/
+venv/
+.venv/
+Lib/
+
+# =====================
+# Archivos de Python
+# =====================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =====================
+# Configuraciones de entorno
+# =====================
+*.env
+*.local
+*.log
+
+# =====================
+# IDEs y editores
+# =====================
+.vscode/
+.idea/
+
+# =====================
+# Archivos del sistema operativo
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Compilados de C y otros binarios
+# =====================
+*.so
+*.dll
+*.dylib
+
+# =====================
+# Distribuciones y dependencias
+# =====================
+build/
+dist/
+*.egg-info/
+Pipfile.lock
+poetry.lock
+
+# =====================
+# Testing y cobertura
+# =====================
+htmlcov/
+coverage.xml
+.cache/
+pytest_cache/
+
+# =====================
+# Jupyter Notebooks
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# Docker
+# =====================
+docker-compose.override.yml
+Dockerfile
+.dockerignore
+
+# Opcional: Volúmenes locales de Docker (¡si no quieres guardarlos!)
+docker-volumes/
+
+# =====================
+# Tu error específico (MongoDB Lib que no se debe trackear)
+# =====================
+Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib/
+
+# =====================
+# Otros posibles (bases de datos locales)
+# =====================
+*.sqlite3
+*.db
