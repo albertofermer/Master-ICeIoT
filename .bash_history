@@ -19,6 +19,7 @@ git push
 git pull
 git stash
 git pull
+<<<<<<< HEAD
 git add .
 cd Master-ICeIoT/
 git add .
@@ -95,3 +96,5 @@ git push
 git push --set-upstream origin maingit pull
 git push --set-upstream origin main
 git pull
+=======
+>>>>>>> c129f85e38632f03f3de3e3cc42954648b4eac5f
