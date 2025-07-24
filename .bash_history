@@ -62,3 +62,11 @@ warning: in the working copy of 'Primer Cuatrimestre/[ADP]/Práctica/MongoDB/Mon
 warning: in the working copy of 'Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib/site-packages/IPython/core/crashhandler.py', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib/site-packages/IPython/core/debugger.py', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib/site-packages/IPython/core/display.py', LF will be replaced by CRLF the next time Git touches it
+git add .
+git commit -m "Update"
+git push
+git add .
+git commit -m"Final Commit"
+git push
+git pull
+git push

@@ -1,0 +1,427 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed May 14 19:52:14 2025
+# Process ID         : 5310
+# Current directory  : /home/alberto/alarm/alarm.runs/synth_1
+# Command line       : vivado -log alarm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alarm.tcl
+# Log file           : /home/alberto/alarm/alarm.runs/synth_1/alarm.vds
+# Journal file       : /home/alberto/alarm/alarm.runs/synth_1/vivado.jou
+# Running On         : vivado-cap
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+# CPU Frequency      : 1800.000 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 5508 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 7656 MB
+# Available Virtual  : 5517 MB
+#-----------------------------------------------------------
+source alarm.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/alberto/alarm/alarm.srcs/utils_1/imports/synth_1/alarm.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/alberto/alarm/alarm.srcs/utils_1/imports/synth_1/alarm.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top alarm -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5353
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1894.602 ; gain = 428.801 ; free physical = 728 ; free virtual = 4294
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alarm' [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:17]
+INFO: [Synth 8-226] default block is never used [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:133]
+INFO: [Synth 8-226] default block is never used [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:141]
+INFO: [Synth 8-226] default block is never used [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:227]
+INFO: [Synth 8-226] default block is never used [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:235]
+INFO: [Synth 8-226] default block is never used [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:243]
+WARNING: [Synth 8-614] signal 'alarm_hours' is read in the process but is not in the sensitivity list [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:219]
+WARNING: [Synth 8-614] signal 'alarm_minutes' is read in the process but is not in the sensitivity list [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'alarm' (0#1) [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:17]
+WARNING: [Synth 8-6014] Unused sequential element chrono_sec_count_reg was removed.  [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element saved_minutes_reg was removed.  [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element saved_seconds_reg was removed.  [/home/alberto/alarm/alarm.srcs/sources_1/new/alarm.vhd:111]
+WARNING: [Synth 8-3917] design alarm has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[2] driven by constant 0
+WARNING: [Synth 8-7129] Port SW[15] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module alarm is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1968.570 ; gain = 502.770 ; free physical = 648 ; free virtual = 4214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1986.383 ; gain = 520.582 ; free physical = 647 ; free virtual = 4213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1986.383 ; gain = 520.582 ; free physical = 647 ; free virtual = 4213
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1986.383 ; gain = 0.000 ; free physical = 647 ; free virtual = 4213
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SSEG_CA[7]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:262]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:267]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:267]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:276]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:277]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:277]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:282]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:282]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:283]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:285]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:291]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:291]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:292]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:292]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:294]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:294]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:303]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:303]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:304]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:304]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:311]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:311]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:312]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:314]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:314]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:315]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:315]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:316]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc:316]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/alberto/alarm/alarm.srcs/constrs_1/new/Basys3_alarm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alarm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alarm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.133 ; gain = 0.000 ; free physical = 635 ; free virtual = 4201
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.133 ; gain = 0.000 ; free physical = 635 ; free virtual = 4201
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2141.133 ; gain = 675.332 ; free physical = 612 ; free virtual = 4178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2149.137 ; gain = 683.336 ; free physical = 612 ; free virtual = 4178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2149.137 ; gain = 683.336 ; free physical = 612 ; free virtual = 4178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2149.137 ; gain = 683.336 ; free physical = 610 ; free virtual = 4178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 9     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 11    
+	   4 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 6     
+	   4 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 38    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design alarm has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design alarm has port LED[2] driven by constant 0
+WARNING: [Synth 8-7129] Port SW[15] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module alarm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module alarm is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 2149.137 ; gain = 683.336 ; free physical = 563 ; free virtual = 4135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 2166.137 ; gain = 700.336 ; free physical = 513 ; free virtual = 4085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 2200.738 ; gain = 734.938 ; free physical = 480 ; free virtual = 4052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 2218.770 ; gain = 752.969 ; free physical = 471 ; free virtual = 4043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    36|
+|3     |LUT1   |    13|
+|4     |LUT2   |    48|
+|5     |LUT3   |    15|
+|6     |LUT4   |    47|
+|7     |LUT5   |    85|
+|8     |LUT6   |   123|
+|9     |MUXF7  |    12|
+|10    |MUXF8  |     2|
+|11    |FDRE   |   168|
+|12    |IBUF   |     8|
+|13    |OBUF   |    27|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.582 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 2360.582 ; gain = 740.031 ; free physical = 358 ; free virtual = 3930
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 2360.590 ; gain = 894.781 ; free physical = 358 ; free virtual = 3930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2360.590 ; gain = 0.000 ; free physical = 356 ; free virtual = 3928
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2384.594 ; gain = 0.000 ; free physical = 519 ; free virtual = 4091
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1bbbb916
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 88 Warnings, 38 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 2384.594 ; gain = 1006.355 ; free physical = 519 ; free virtual = 4091
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1613.324; main = 1576.371; forked = 279.224
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3072.508; main = 2384.598; forked = 923.367
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2408.605 ; gain = 0.000 ; free physical = 518 ; free virtual = 4090
+INFO: [Common 17-1381] The checkpoint '/home/alberto/alarm/alarm.runs/synth_1/alarm.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file alarm_utilization_synth.rpt -pb alarm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 19:53:40 2025...

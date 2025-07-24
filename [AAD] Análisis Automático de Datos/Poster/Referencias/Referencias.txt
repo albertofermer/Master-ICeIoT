@@ -1,0 +1,11 @@
+=======================
+       REFERENCIAS
+=======================
+
+Teoría y ecuaciones:
+Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press.  
+Disponible en: https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+
+Ejemplo práctico:
+Repositorio de código para entrenamiento de un agente de RL en el simulador TORCS (Q-Learning):  
+https://github.com/albertofermer/QLearningTorcs

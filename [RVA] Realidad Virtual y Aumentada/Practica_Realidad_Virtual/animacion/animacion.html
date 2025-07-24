@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<script>
+  AFRAME.registerComponent('update-coords', {
+    init: function () {
+      this.originalPosition = this.el.getAttribute('position');
+    },
+
+    tick: function () {
+      const camera = this.el.querySelector('a-camera');
+      const coords = camera.getAttribute('position');
+      const rotation = camera.getAttribute('rotation');
+
+      const textEntity = this.el.querySelector('#coordsDisplay');
+      if (textEntity && coords && rotation) {
+        const updatedX = coords.x + this.originalPosition.x;
+        const updatedY = coords.y;
+        const updatedZ = coords.z + this.originalPosition.z;
+
+        const rotX = rotation.x.toFixed(1);
+        const rotY = rotation.y.toFixed(1);
+        const rotZ = rotation.z.toFixed(1);
+
+        textEntity.setAttribute(
+          'text',
+          `value: Posición: ${updatedX.toFixed(2)}, ${updatedY.toFixed(2)}, ${updatedZ.toFixed(2)} | Ángulo Y: ${rotY}°`
+        );
+      }
+    }
+  });
+</script>
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+      <!-- Precarga de modelos -->
+      <a-assets>
+        <a-asset-item id="theaterModel" src="https://cdn.glitch.global/3ee1270a-2f5d-4ecc-9c61-529ebba85d86/theater_cinema_auditorium_style_1_of_2.glb?v=1745416717629"></a-asset-item>
+        <a-asset-item id="wheelchairModel" src="https://cdn.glitch.global/3ee1270a-2f5d-4ecc-9c61-529ebba85d86/pj_for_playcanvas.glb?v=1745416716980"></a-asset-item>
+        <a-asset-item id="standingPersonModel" src="https://cdn.glitch.global/3ee1270a-2f5d-4ecc-9c61-529ebba85d86/cool_man.glb?v=1745416747790"></a-asset-item>
+      </a-assets>
+      
+<!-- Cámara con HUD -->
+<a-entity id="cameraRig" position="-12 4 28" rotation="0 -60 0" update-coords>
+  <a-camera wasd-controls-enabled="true" look-controls-enabled="true">
+    <a-entity id="coordsDisplay"
+              position="0 -0.3 -1"
+              text="value: Posición: 30, 0.6, 26; color: black; align: center; width: 2"
+              geometry="primitive: plane; height: 0.2; width: 2"
+              material="color: white; opacity: 0.7"
+              visible="false">
+    </a-entity>
+  </a-camera>
+</a-entity>
+
+
+      <!-- Teatro -->
+      <a-entity gltf-model="#theaterModel"
+                scale="0.1 0.1 0.1"
+                position="0 0 -5"></a-entity>
+
+      <!-- Persona en silla de ruedas con animación de movimiento a la posición (0, 1, 60) y luego rotación de 90 grados -->
+      <a-entity gltf-model="#wheelchairModel"
+                scale="2.5 2.5 2.5"
+                position="30 -0.5 26"
+                rotation="0 90 0"
+                animation="property: position; to: 0 -0.5 23; dur: 5000; easing: linear; loop: false"
+                animation__rotate="property: rotation; to: 0 0 0; dur: 1000; delay: 5000; loop: false"
+                animation__traslation="property: position;from: 0 -0.5 23; to: 0 -0.5 12; dur: 2000; delay: 6000; easing: linear; loop: false">
+      </a-entity>
+
+      <!-- Persona de pie con animación de movimiento a la posición (0, 0, 20) y luego rotación de 180 grados -->
+      <a-entity gltf-model="#standingPersonModel"
+                scale="2.5 2.5 2.5"
+                position="32 0 26"
+                rotation="0 -90 0"
+                animation="property: position; to: 0 -0.5 23; dur: 5000;delay:6000; easing: linear; loop: false"
+                animation__rotate="property: rotation; to: 0 -180 0; dur: 1000; delay: 11000; loop: false"
+                animation__traslation="property: position;from: 0 -0.5 23; to: 0 -0.5 12; dur: 2000; delay: 12000; easing: linear; loop: false"
+                animation__stairs="property: position;from: 0 -0.5 12; to: 0 3.5 -4; dur: 2000; delay: 14000; easing: linear; loop: false">
+      </a-entity>
+      
+      <!-- Caja roja invisible al principio -->
+<a-box position="0 5 12" 
+       depth="1" height="1" width="1"
+       material="color: red; opacity: 0"
+       animation__fadein="property: material.opacity; to: 1; delay: 8000; dur: 200; easing: linear"
+       animation__fadeout="property: material.opacity; to: 0; delay: 8500; dur: 200; easing: linear"
+       animation__fadein2="property: material.opacity; to: 1; delay: 9000; dur: 200; easing: linear"
+       animation__fadeout2="property: material.opacity; to: 0; delay: 9500; dur: 200; easing: linear">
+</a-box>
+
+<a-box position="0 5 12" 
+       depth="1" height="1" width="1"
+       material="color: green; opacity: 0"
+       animation__fadein="property: material.opacity; to: 1; delay: 14000; dur: 200; easing: linear"
+       animation__fadeout="property: material.opacity; to: 0; delay: 14500; dur: 200; easing: linear"
+       animation__fadein2="property: material.opacity; to: 1; delay: 15000; dur: 200; easing: linear"
+       animation__fadeout2="property: material.opacity; to: 0; delay: 15500; dur: 200; easing: linear">
+</a-box>
+    </a-scene>
+    
+<script>
+  // Reinicia la escena tras 16 segundos (16000 milisegundos)
+  setTimeout(() => {
+    location.reload();
+  }, 16000);
+</script>
+    
+  </body>
+</html>

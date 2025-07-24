@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+      // Script para controlar el movimiento de la cámara con espacio/shift
+      AFRAME.registerComponent('movement-controls', {
+        schema: {
+          speed: { type: 'number', default: 0.125 }, // Velocidad de movimiento
+        },
+
+        init: function () {
+          this.velocity = new THREE.Vector3(); // Usamos un vector para la velocidad
+          this.direction = new THREE.Vector3(); // Dirección del movimiento
+          this.cameraEl = this.el; // La cámara es el objeto a mover
+          this.camera = this.cameraEl.object3D; // El objeto 3D de la cámara
+          this.boatEl = document.querySelector('#boat'); // Obtenemos el barco por su id
+        },
+
+        tick: function () {
+          const camera = this.camera;
+          const speed = this.data.speed;
+
+          // Restablecer dirección
+          this.direction.set(0, 0, 0);
+
+          // Movimiento solo en el eje Y (arriba/abajo)
+          if (this.isKeyPressed('Space')) this.direction.y = 1; // Subir
+          if (this.isKeyPressed('ShiftLeft')) this.direction.y = -1; // Bajar
+
+          // Normalizar la dirección y mover la cámara
+          this.direction.normalize();
+          this.velocity.copy(this.direction).multiplyScalar(speed);
+          camera.position.add(this.velocity);
+        },
+
+        isKeyPressed: function (key) {
+          // Verificar si una tecla está presionada
+          return window.pressedKeys && window.pressedKeys[key];
+        }
+      });
+
+      // Detectar teclas presionadas globalmente
+      window.pressedKeys = {};
+
+      window.addEventListener('keydown', function (e) {
+        window.pressedKeys[e.code] = true;
+
+        // Si la tecla 'B' es presionada, teletransportamos la cámara al barco
+        if (e.code === 'KeyB') {
+          const boatPosition = document.querySelector('#boat_e').object3D.position;
+          const cameraEl = document.querySelector('a-camera');
+          cameraEl.setAttribute('position', {
+            x: boatPosition.x,
+            y: boatPosition.y + 5, // Para mantener la cámara encima del barco
+            z: boatPosition.z
+          });
+        }
+      });
+
+      window.addEventListener('keyup', function (e) {
+        window.pressedKeys[e.code] = false;
+      });
+    </script>
+  </head>
+
+  <body>
+    <a-scene>
+      <!-- Asset Management System -->
+      <a-assets>
+        <!-- Cargar el archivo .glb del pueblo -->
+        <a-asset-item id="village" src="https://cdn.glitch.global/9c7f018a-88b7-4a91-aef3-30e60ac029ac/bomb_it_kart_racer_track_1.glb?v=1745332837411"></a-asset-item>
+        
+        <!-- Cargar el archivo .glb del barco -->
+        <a-asset-item id="boat" src="https://cdn.glitch.global/9c7f018a-88b7-4a91-aef3-30e60ac029ac/fishingboat.glb?v=1745333500026"></a-asset-item>
+        
+        <!-- Cargar el archivo .glb del helicóptero -->
+        <a-asset-item id="helicoptero" src="https://cdn.glitch.global/9c7f018a-88b7-4a91-aef3-30e60ac029ac/sh-60b_seahawk_helicopter.glb?v=1745334945694"></a-asset-item>
+        <a-asset-item id="persona" src="https://cdn.glitch.global/9c7f018a-88b7-4a91-aef3-30e60ac029ac/like_a_dragon_infinite_wealth_-_nanba.glb?v=1745335470570"></a-asset-item>
+ 
+        <!-- Cargar el archivo .glb del tiburón -->
+        <a-asset-item id="tiburon" src="https://cdn.glitch.global/9c7f018a-88b7-4a91-aef3-30e60ac029ac/tralalero_tralala_3d_game_ready_model_free.glb?v=1745334479412"></a-asset-item>
+      </a-assets>
+
+      <!-- Modelo del pueblo -->
+      <a-entity gltf-model="#village" position="0 0 -5" scale="0.5 0.5 0.5"></a-entity>
+
+      <!-- Modelo del barco -->
+      <a-entity id="boat_e" gltf-model="#boat" position="5 -25 -10" scale="1 1 1"></a-entity>
+
+      <!-- Modelo del helicóptero encima del barco -->
+      <a-entity id="helicoptero_e" gltf-model="#helicoptero" position="5 -15 -10" scale="0.005 0.005 0.005"></a-entity>
+
+      <!-- Modelo de la persona justo encima del barco -->
+      <a-entity id="persona_e" gltf-model="#persona" position="5 -20 -10" scale="0.05 0.05 0.05"></a-entity>
+
+      <!-- Modelo del tiburón -->
+      <a-entity gltf-model="#tiburon" position="10 -25 -15" scale="1 1 1"></a-entity>
+
+      <!-- Cámara con controles de movimiento -->
+      <a-entity position="10 5 10" movement-controls="speed: 2.0">
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
