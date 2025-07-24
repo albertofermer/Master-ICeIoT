@@ -1,3 +1,20 @@
+# Ignorar archivos ocultos innecesarios
+.*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.cache/
+.vscode/
+.idea/
+.env
+.python-version
+
+# Pero NO ignores estos archivos ocultos útiles
+!.gitignore
+!.gitattributes
+!.github/
+
 # =====================
 # Entornos virtuales
 # =====================
