@@ -120,3 +120,45 @@ git push
 git push
 git rev-list --objects --all | sort -k2 | while read hash name; do git cat-file -s $hash; echo " $name"; done | sort -nr | head -n 10
 git rev-list --objects --all | sort -k2 | while read hash name; do git cat-file -s $hash; echo " $name"; done | sort -nr | head -n 10
+
+du -ah . | sort -hr | head -n 20
+git push
+git status
+git reset
+git add .
+git commit -m"final commit"
+git push
+du -sh .git
+curl -L https://github.com/newren/git-filter-repo/releases/latest/download/git-filter-repo.exe -o /usr/bin/git-filter-repo.exe
+pip install git-filter-repo
+git filter-repo   --path "Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib"   --path "Primer Cuatrimestre/[CNC] Clasificación No Convencional/Practica 1/venv"   --invert-paths
+git filter-repo   --path "Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib"   --path "Primer Cuatrimestre/[CNC] Clasificación No Convencional/Practica 1/venv"   --invert-paths
+git filter-repo   --path "Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib"   --path "Primer Cuatrimestre/[CNC] Clasificación No Convencional/Practica 1/venv"   --invert-paths
+git filter-repo   --path "Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MongoDB/Lib"   --path "Primer Cuatrimestre/[CNC] Clasificación No Convencional/Practica 1/venv"   --invert-paths   --force
+du -sh .git
+git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' |   awk '$1=="blob" {print $3, $4}' | sort -nr | head -n 20
+du -sh .git
+git reset
+git add .
+git commit -m"24/07"
+git add .
+alber@Acer-Alberto MINGW64 ~ (main)
+$ 
+bash: $'\302\226': command not found
+alber@Acer-Alberto MINGW64 ~ (main)
+$ du -ah . | sort -hr | head -n 20
+du: cannot access './[V3D] Vision 3D': No such file or directory
+19G     .
+15G     ./Primer Cuatrimestre
+14G     ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB
+14G     ./Primer Cuatrimestre/[ADP]/Práctica
+14G     ./Primer Cuatrimestre/[ADP]
+13G     ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR/DATA
+13G     ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR
+7.7G    ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR/DATA/JSONs
+3.0G    ./.git/objects
+3.0G    ./.git
+2.7G    ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR/DATA/CSVs
+2.3G    ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR/DATA/nature
+1.2G    ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR/DATA/JSONs/sms-call-internet-mi-2013-11-22.json
+1.2G    ./Primer Cuatrimestre/[ADP]/Práctica/MongoDB/MilanCDR/DATA/JSONs/sms-call-internet-mi-2013-11-21.json
