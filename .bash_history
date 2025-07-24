@@ -98,3 +98,25 @@ git push --set-upstream origin main
 git pull
 =======
 >>>>>>> c129f85e38632f03f3de3e3cc42954648b4eac5f
+git pull origin main
+git branch --set-upstream-to=origin/main main
+git branch --set-upstream-to=origin/main main
+git branch --set-upstream-to=origin/main main
+git pull
+git pull origin main --allow-unrelated-histories
+git add .bash_history .gitconfig
+git commit -m "Cambios locales antes de hacer pull"
+git pull origin main --allow-unrelated-histories
+git restore .bash_history .gitconfig
+git pull origin main --allow-unrelated-histories
+git pull origin main --allow-unrelated-histories
+git add .
+git commit -m "Cambios locales antes de hacer pull"
+git push
+git remote -v
+GIT_TRACE=1 GIT_CURL_VERBOSE=1 git push
+git push
+git push
+git push
+git rev-list --objects --all | sort -k2 | while read hash name; do git cat-file -s $hash; echo " $name"; done | sort -nr | head -n 10
+git rev-list --objects --all | sort -k2 | while read hash name; do git cat-file -s $hash; echo " $name"; done | sort -nr | head -n 10
