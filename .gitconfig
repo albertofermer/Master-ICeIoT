@@ -9,3 +9,5 @@
 [http]
 	postBuffer = 524288000
 	maxRequestBuffer = 100M
+[credential]
+	helper = cache

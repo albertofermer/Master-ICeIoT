@@ -70,3 +70,28 @@ git commit -m"Final Commit"
 git push
 git pull
 git push
+git add .
+git commit
+git add .
+git commit -m "final commit"
+git push
+git push --set-upstream origin main
+login
+git login
+git config --global user.name albertofermer 
+git config --global credential.helper cache
+git config --global --list
+git push
+git help config
+git push --set-upstream origin main
+git remote set-url originn https://github.com/albertofermer/Master-ICeIoT.git
+git remote set-url ç https://github.com/albertofermer/Master-ICeIoT.git
+clear
+git remote set-urlorigin https://github.com/albertofermer/Master-ICeIoT.git
+git remote set-url origin https://github.com/albertofermer/Master-ICeIoT.git
+git push --set-upstream origin main
+git pull
+git push
+git push --set-upstream origin maingit pull
+git push --set-upstream origin main
+git pull
